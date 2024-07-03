@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Bootstrap CSS -->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous"
+ />
+ <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+   rel="stylesheet"
+ />
+ <link rel="stylesheet " href="./movie.css" />
+  <title>Flix stream</title>
+  <meta name="description" content="Flix is a popular movie app made by Ruthless">
+  <script src="./assets/js/global.js" defer></script>
+  <script src="./assets/js/index.js" type="module"></script>
+</head>
+<body>
+  
+<!--Header-->
+<header class="header">
+  <a href="./index.html" class="logo">
+    <img src="./Qrispy_white.svg" width="140" height="32" alt="Flix home"> 
+  </a>
+
+  <div class="search-box " search-box>
+    <div class="search-wrapper" search-wrapper>
+      <input type="text" name="search" aria-label="search movies" placeholder="Search any movies..."
+       class="search-field" autocomplete="off" search-field>  
+
+       <i class="ri-search-line leading-icon" width="24" height="24" alt="search" ></i> 
+
+    </div>
+
+
+    <button class="search-btn" style="" search-toggler >
+      <img src="./images/images.png" class="close-btn" width="24" height="24" alt="close search box">
+    </button>
+
+  </div>
+
+
+  <button class="search-btn" search-toggler menu-close>
+    <i class="ri-search-line search-icon " width="24" height="24" ></i>
+  </button>
+
+
+  <button class="menu-btn" menu-btn menu-toggler>
+    <img src="./menu.png" width="24" height="24" alt="open menu" class="menu">
+    <img src="./menu-close.png"  style="background-color: white;" width="24" height="24" class="close" alt="close menu" >
+  </button>
+
+</header>
+
+<main>
+<!--SideBar-->
+<nav class="sidebar " sidebar></nav>
+
+<div class="overlay" overlay menu-toggler></div>
+
+
+
+<article class="container" page-content></article>
+
+</main>
+</body>
+</html>
